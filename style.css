@@ -1,0 +1,77 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    height: 100vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 400;
+    background-image: url(images/tacobel.jpg);
+    background-position:center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+
+#top {
+    width: 100%;
+    background: rgb(44, 42, 47);
+    position: relative;
+    color: white;
+
+}
+
+ul {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px ;
+    cursor: pointer;
+}
+
+li {
+    list-style: none;
+    text-decoration: none;
+}
+
+a {
+    text-decoration: none;
+    color: aliceblue;
+    padding: 0px 30px;
+}
+
+a:hover {
+    background:  rgb(82, 80, 91);
+    border-radius: 10px;
+    
+}
+
+
+.homework{
+    display: none;
+    padding: 10px ;
+    background: rgb(44, 42, 47);
+}
+
+.home:hover .homework{
+    display: block;
+    position: absolute;
+}
+
+.prjcts{
+    display: none;
+    padding: 10px;
+    background:rgb(44, 42, 47);
+}
+.projects:hover .prjcts{
+    display: block;
+    position: absolute;
+}
+
+/* @media screen and(max-width:767px) {
+    nav{
+        width: ;
+    }
+} */

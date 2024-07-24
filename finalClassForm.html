@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up Form</title>
+    <!-- Google fonts library  -->
+    <link
+    href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap"
+    rel="stylesheet"/>
+
+ <!-- Font awesome library    -->
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.2/css/all.css"/>
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.2/css/sharp-thin.css" />
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.2/css/sharp-solid.css"/>
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.2/css/sharp-regular.css"/>
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.2/css/sharp-light.css"/>
+
+    <link rel="stylesheet" href="css/finalClassForm.css">
+</head>
+<body>
+    <form id="form">
+        <h1>Sign Up Form</h1>
+        <div class="form-control">
+            <label for="firstname">First Name</label>
+            <input type="text" class="first-name" id="first-name" placeholder="Your First name">
+            <small>Error message</small>
+        </div>
+        <div class="form-control">
+            <label for="lastname">Last Name</label>
+            <input type="text" class="last-name" id="last-name" placeholder="Your Last name">
+            <small>Error message</small>
+        </div>
+        <div class="form-control">
+            <label for="email">Email</label>
+            <input type="email" class="email" id="email" placeholder="Your Email">
+            <small>Error message</small>
+        </div>
+        <div class="form-control">
+            <label for="phone-number">Phone Number</label>
+            <div class="phoneNo">
+                <select name="Nigeria" id="country-code">
+                    <option value="country-code">+234</option>
+                    <option value="country-code">+212</option>
+                    <option value="country-code">+146</option>
+                </select>
+                <input type="text" class="phone-number" id="phone-number" placeholder="Your Phone Number">
+            </div>
+            <small>Error message</small>
+        </div>
+        <div class="form-control">
+            <label for="password">Password</label>
+            <input type="password" class="password" id="password" placeholder="Generate Password">
+            <small>Error message</small>
+        </div>
+        <div class="form-control">
+            <label for="confirm password">Confirm Password</label>
+            <input type="password" class="confirm-password" id="confirm-password" placeholder="Confirm Password">
+            <small>Error message</small>
+        </div>
+        <div class="form-control">
+            <label for="gender">Gender</label>
+            <div>
+                <input type="radio" name="gender" id="male" value="male">
+                <label for="male">Male</label>
+                <input type="radio" name="gender" id="female" value="male">
+                <label for="female">Female</label>
+            </div>
+            <small>Error message</small>
+        </div>
+        <div class="form-control">
+            <label for="address">Address</label>
+            <input type="text" class="address" id="address" placeholder="Your Address">
+            <small>Error message</small>
+        </div>
+
+        <p class="terms">
+            <input type="checkbox" class="terms"> I agree with the <a href="#">terms</a> and <a href="#">Conditions</a> 
+        </p>
+
+        <button type="submit"> Sign Up</button>
+
+        <span class="icons">
+            <i class="fa-solid fa-envelope"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-google"></i>
+            <i class="fa-brands fa-skype"></i>
+        </span>
+    </form>
+
+    <script src="/js/finalClassForm.js"></script>
+</body>
+</html>
