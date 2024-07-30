@@ -5,7 +5,6 @@ let email = document.getElementById ("email");
 let phoneNo = document.getElementById ("phone-number");
 let password = document.getElementById ("password");
 let confirmPassword = document.getElementById ("confirm-password");
-let address = document.getElementById ("address");
 
 form.addEventListener('submit', function (e){
     e.preventDefault ();
@@ -19,7 +18,6 @@ function checkInput () {
     let phoneNoValue = phoneNo.value.trim ();
     let passwordValue = password.value.trim ();
     let confirmPasswordValue = confirmPassword.value.trim ();
-    let addressValue = address.value.trim ();
 
     function isEmail(email) {
         return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
@@ -76,14 +74,6 @@ function checkInput () {
         setErrorfor (confirmPassword, "password do not match");
     } else {
         setSuccessfor (confirmPassword);
-    }
-
-    if (addressValue === ""){
-        setErrorfor (address, "can not be blank");
-    } else if (addressValue.length<10){
-        setErrorfor (address, "invalid address");
-    } else {
-        setSuccessfor (address);
     }
 }
 
